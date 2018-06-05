@@ -1,0 +1,438 @@
+/*....... Global .......*/
+* {
+    margin: 0;
+    padding: 0
+    outline: 0;
+    font-size: 100%;
+    background: transparent;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.wrapper {
+    width: 60%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: 300;
+    color: #fff;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.readMore {
+    font-size: 12px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    padding: 10px 30px;
+    margin: 20px auto;
+    border: 1px solid #000;
+    border-radius: 50px;
+    background: #fff;
+    display: inline-block;
+    transition: .3s;
+}
+
+.readMore:hover {
+    background: #333;
+    color: #fff;
+}
+
+/*....... Nav .......*/
+header {
+    height: 100vh;
+    background: url(img/landing.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.nav {
+    height: 80px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav .logo {
+    flex: 1;
+    margin-right: auto;
+}
+
+.nav .li {
+    flex: 1;
+    text-align: right;
+}
+
+.nav a {
+     color: #fff;
+ }
+
+.nav .li a {
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+.nav .li a:hover {
+    color: #8f8f8f;
+}
+
+/*....... Landing .......*/
+.landing {
+    margin: 120px auto;
+}
+
+.landing h4 {
+    color: #fff;
+}
+
+.landing .readMore {
+    border: 0;
+    margin-top: 20px;
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(45deg);
+    margin: auto;
+}
+
+/*....... Sections .......*/
+.art1, .art2, .art3, .art4 {
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 1px 3px 10px rgba(0,0,0,0.2);
+}
+
+.btnL a {
+    font-size: 13px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    padding: 5px 15px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.btnL a:hover {
+    background: #fff;
+    color: #333;
+}
+
+.sec-wrap {
+    width: 95%;
+    margin: auto;
+}
+
+.top-part {
+    height: 300px;
+    border-radius: 5px 5px 0 0;
+}
+
+.art-top {
+    display: flex;
+    padding: 20px;
+}
+
+.btnR {
+    flex: 1;
+    text-align: right;
+    display: inline-block;
+    color: #fff;
+}
+
+.btnL a, .btnR img, .btnR span {
+    color: #fff;
+    vertical-align: middle;
+}
+
+.btnR span {
+    padding-left: 5px;
+    opacity: 0.8;
+    font-size: 14px;
+}
+
+.art-content, .art-content2 {
+    padding: 30px;
+}
+
+.art-content2 {
+
+}
+
+/*....... Sections 1 .......*/
+.sec1 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sec1 .art1, .sec1 .art2, .sec1 .art3, .sec1 .art4 {
+    flex: 1 0 23%; /* 23% is flex basis */
+    margin: 1%;
+}
+
+.sec1 .art1 .top-part {
+    background: url(img/1-1.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.sec1 .art2 {
+    background: url(img/1-2.jpeg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+.sec1 .art3 .top-part {
+    background: url(img/1-3.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.sec1 .art4 span {
+    color: #333;
+}
+
+/*....... Sections 2 .......*/
+.sec2 {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sec2 .art1 {
+    flex: 2 0 46%;
+    margin: 1%;
+}
+
+.sec2 .art2, .sec2 .art3 {
+    flex: 1 0 23%;
+    margin: 1%;
+}
+
+.sec2 .art1 .top-part {
+    background: url(img/2-1.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.sec2 .art2 .top-part {
+    background: url(img/1-2.jpeg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+.sec2 .art3 {
+    background: url(img/1-1.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+/*....... Sections 3 .......*/
+.sec3 {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sec3 .art3 {
+    flex: 2 0 46%;
+    margin: 1%;
+}
+
+.sec3 .art1, .sec3 .art2 {
+    flex: 1 0 23%;
+    margin: 1%;
+}
+
+.sec3 .art1 {
+    background: url(img/1-3.jpeg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+.sec3 .art2 span {
+    color: #333;
+}
+
+.sec3 .art3 .top-part {
+    background: url(img/1-1.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+/*..... More Articles .....*/
+.more-art {
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.more-art a {
+    flex: 1;
+    text-align: center;
+}
+
+.more-art span {
+    position: relative;
+    top: -5px;
+}
+
+/*....... Footer .......*/
+footer {
+    background: #14181b;
+    padding: 50px 0;
+    color: #6a6a6a;
+}
+
+footer a {
+    color: #6a6a6a;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.foot-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav, .form {
+    flex: 1 0 46%;
+}
+
+nav ul {
+    padding: 10px;
+    list-style: none;
+}
+
+nav ul li {
+    margin-bottom: 20px;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
+}
+
+.form input, .form a {
+    display: block;
+    width: 90%;
+    margin: 0 auto 30px auto;
+    padding: 15px 5px;
+    border: 0;
+    border-bottom: 1px solid #6a6a6a;
+    color: #6a6a6a;
+}
+
+[placeholder] {
+    font-size: 12px;
+    /* text-transform: uppercase; */
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.form a {
+    border: 1px solid #6a6a6a;
+    border-radius: 50px;
+    text-align: center;
+    transition: .3s;
+}
+
+.form a:hover {
+    background: #6a6a6a;
+    color: #14181b;
+}
+
+.copy {
+    text-align: center;
+    margin-top: 20px;
+}
+/*
+/*..... Media Queries .....*/
+@media (max-width: 1100px) {
+    .sec1 .art1, .sec1 .art2, .sec1 .art3, .sec1 .art4 {
+        flex: 1 0 46%;
+    }
+
+    .sec2 .art2, .sec2 .art3 {
+        flex: 1 0 46%;
+    }
+
+    .sec3 .art1, .sec3 .art2 {
+        flex: 1 0 46%;
+    }
+
+    .sec3 .art2 {
+        order: 3;
+    }
+}
+
+@media (max-width: 530px) {
+    .nav {
+        display: block;
+        text-align: center;
+    }
+
+    .nav .li {
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .landing {
+        margin: 60px auto;
+    }
+
+    .sec1, .sec2, .sec3 {
+        display: block;
+    }
+
+    .foot-top {
+        display: block;
+    }
+}
